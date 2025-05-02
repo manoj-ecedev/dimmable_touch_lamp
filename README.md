@@ -30,6 +30,7 @@ This project simulates a touch-activated dimmable LED lamp. A button toggles the
 ## 🔌 Circuit Diagram
 
 ![Circuit Diagram](./circuit_diagram.png)
+![Tinkercad Diagram](./tinkercad_circuit.png)
 
 ## 📄 Code Example
 
