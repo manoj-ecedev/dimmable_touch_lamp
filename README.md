@@ -26,6 +26,38 @@ This project simulates a touch-activated dimmable LED lamp. A button toggles the
 - One terminal to 5V
 - Wiper (middle) to A0
 - Other terminal to GND
+  
+## 🔌 Circuit Diagram
+
+![Circuit Diagram](./circuit_diagram.png)
+
+## 📄 Code Example
+
+```cpp
+int led=10;
+int p=A0;
+int button =3;
+int val;
+int state=0;
+void setup()
+{
+  pinMode(led, state);
+  pinMode(button,INPUT_PULLUP);
+  
+}
+
+void loop(){
+  if(digitalRead(button)==HIGH){
+ val=analogRead(p);
+  val=map(val,0,1023,0,255);
+    analogWrite(led,val);}
+     else{
+       analogWrite(led,0);
+     }
+  delay(10);
+}
+```
+
 
 ## 📄 Features
 
@@ -43,7 +75,8 @@ This project simulates a touch-activated dimmable LED lamp. A button toggles the
 ## 🛠️ Built With
 
 - Arduino UNO
-- Arduino IDE / PlatformIO
+- Arduino IDE 
+- Tinkercad
 - Breadboard prototyping
 
 ## ✍️ Author
