@@ -64,7 +64,7 @@ void loop(){
 
 - Press button to toggle LED ON or OFF
 - Adjust LED brightness using the potentiometer
-- Uses PWM via pin 3 and analogRead from A0
+- Uses PWM via pin 10 and analogRead from A0
 - Serial monitor shows brightness value
 
 ## 📂 File List
